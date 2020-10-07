@@ -12,7 +12,7 @@ node
     {
         sh "${mavenHome}/bin/mvn sonar:sonar"
     }
-     stage('Nexus')
+     stage('Nexus Repository')
     {
         sh "${mavenHome}/bin/mvn deploy"
     }
